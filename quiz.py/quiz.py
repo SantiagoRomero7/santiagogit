@@ -1,25 +1,38 @@
-def es_primo (num):
-     
-     if num < 2:
-         return False
-     for i in range(2, int(num**0.5)+1 ): 
-         if num % i == 0: 
-          return False
-     return True
- 
- 
-def encontrar_primos_gemelos(limite):
-    primos = [num for num in range (2, limite + 1) if es_primo(num)]
-    gemelos = [(primos[i], primos [i+1]) for i in range (len(primos) - 1 )if primos [i+1] - primos[i] == 21]
-    return gemelos if gemelos else "no se econtraron primos en el rango dado"
- 
-def es_palindromicos (num):
-    return str(num) == str(num)[::-1]
+def es_primo(numero):
 
+    if numero < 2:
+        return False
+    
+    for i in range(2, int(numero**0.5) + 1):
+        if numero % i == 0:
+            return False
+    
+    return True
+
+def encontrar_primos_gemelos(limite):
+ 
+    pares_gemelos = []
+    
+    for num in range(2, limite - 1):
+        if es_primo(num) and es_primo(num + 2):
+            pares_gemelos.append((num, num + 2))
+    
+    return pares_gemelos
+
+def es_palindromo(numero):
+    
+    numero_str = str(numero)
+    return numero_str == numero_str[::-1]
 
 def encontrar_primos_palindromicos(limite):
-   return [num for num in range (10, limite +1 ) if es_primo (num) and es_palindromicos(num)]
-
+    
+    primos_palindromicos = []
+    
+    for num in range(10, limite + 1):
+        if es_palindromo(num) and es_primo(num):
+            primos_palindromicos.append(num)
+    
+    return primos_palindromicos
 
 def menu():
 
