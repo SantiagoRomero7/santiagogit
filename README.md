@@ -1,5 +1,5 @@
-
-#Buscador de Números Primos Especiales#
+# - Título del Proyecto
+**Buscador de Números Primos Especiales**
 
 ## - Descripción del Proyecto
 Este proyecto es un programa en Python que permite encontrar dos tipos especiales de números primos: primos gemelos y primos palindrómicos. A través de un menú interactivo, el usuario puede realizar estas búsquedas dentro de un rango especificado.
@@ -70,4 +70,3 @@ Durante el desarrollo de este proyecto, se adquirieron conocimientos clave sobre
 
 ## - GitHub
 Repositorio: [Buscador de Números Primos Especiales](https://github.com/SantiagoRomero7/primospy)
-
