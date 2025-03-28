@@ -70,3 +70,4 @@ Durante el desarrollo de este proyecto, se adquirieron conocimientos clave sobre
 
 ## - GitHub
 Repositorio: [Buscador de Números Primos Especiales](https://github.com/SantiagoRomero7/primospy)
+
